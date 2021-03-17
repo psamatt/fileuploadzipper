@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "1f872c53-eb55-4200-b91c-b79482f37990",
+		"name": "File Upload",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload files",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/mattgoodwin/Downloads/me.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/fileupload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fileupload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actuator - Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/actuator/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actuator",
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
